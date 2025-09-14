@@ -1,9 +1,11 @@
 {
-  "name": "nodejs",
+  "name": "avolus-site",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
+    "start": "node api/index.js",
+    "vercel-build": "echo 'Nada para build'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,3 +16,4 @@
     "express": "^5.1.0"
   }
 }
+
