@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-br">
+  <!-- nome do site -->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Planeje suas finanças</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Painel do site -->
+    <header class="header">
+      <section>
+        <!--logo do site-->
+        <img class="logo" src="imagens/Avolus-Logo.png" alt="Logo da Avolus" />
+        <!--menu do site-->
+        <nav class="menu">
+          <a href="#Inicio">Inicio</a>
+          <a href="#Sobre">Sobre</a>
+          <a href="#Serviços">Serviços</a>
+          <button id="btnEntrar">Entrar</button>
+        </nav>
+        <!--espaço para montar o processo de login-->
+        <div id="form-container">
+          <div class="form-box">
+            <!--formulario de login-->
+            <form id="login-form" class="login-form">
+              <h2>Login</h2>
+              <input
+                id="loginIdentifier"
+                type="text"
+                placeholder="Email ou Nickname"
+                required
+              />
+              <input
+                id="loginPassword"
+                type="password"
+                placeholder="Senha"
+                required
+              />
+              <button type="submit">Entrar</button>
+              <p>Não tem uma conta?</p>
+              <button type="button" id="btnCadastrar">Cadastre-se</button>
+              <br />
+              <button type="button" id="btnFecharLogin">Fechar</button>
+            </form>
+            <!--formulario de cadastro-->
+            <form
+              id="register-form"
+              class="register-form"
+              style="display: none"
+            >
+              <h2>Cadastrar</h2>
+              <input
+                id="registerEmail"
+                type="email"
+                placeholder="Email"
+                required
+              />
+              <input
+                id="registerNickname"
+                type="text"
+                placeholder="Nickname"
+                required
+              />
+              <input
+                id="registerSenha"
+                type="password"
+                placeholder="Senha"
+                required
+              />
+              <button type="submit">Cadastrar</button>
+              <br />
+              <button type="button" class="close-btn" id="btnFecharCadastro">
+                Fechar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="home-container">
+      <section id="Inicio">
+        <div class="home-content">
+          <h3>Comece A Organizar As Suas Finanças</h3>
+          <p>
+            Finalmente um site onde você pode organizar a sua vida financeira DE
+            GRAÇA!!
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <section class="Sobre" id="Sobre">
+      <h3 class="heading">Sobre</h3>
+      <p>
+        Esse site foi criado na minha intenção de aprender a ser fullstack, e
+        também para ajudar as pessoas a organizar suas finanças.
+      </p>
+      <p>
+        Esse site ainda está em desenvolvimento, então pode ter alguns bugs, mas
+        não se preocupe, estamos trabalhando nisso.
+      </p>
+    </section>
+
+    <!--serviços oferecidos pelo site-->
+    <div class="serviços" id="Serviços">
+      <h3 class="heading">Nossos Serviços</h3>
+      <div class="serviços-container">
+        <div class="serviços-card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661757762481-676c2690d8ac?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Organização de Contas"
+          />
+          <h2>Gerencie seu Salário e suas Contas</h2>
+          <p>
+            Tenha controle total sobre sua renda e despesas. Organize suas
+            contas em um só lugar e planeje seu orçamento de forma simples e
+            eficaz.
+          </p>
+        </div>
+
+        <div class="serviços-card">
+          <img
+            src="https://media.istockphoto.com/id/1136634629/pt/foto/young-traveler-planning-vacation-trip-and-searching-information-or-booking-hotel-on-laptop.jpg?s=1024x1024&w=is&k=20&c=McMKgUrVoAxqwX8SBpTTzlwjy6HssrZ88k3bnPdD8mU="
+            alt="Planejamento de Viagem"
+          />
+          <h2>Planeje suas Viagens</h2>
+          <p>
+            Monte roteiros personalizados, organize hospedagens, transporte e
+            gastos, e aproveite cada detalhe da sua viagem sem preocupações.
+          </p>
+        </div>
+
+        <div class="serviços-card">
+          <img
+            src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Gastos Mensais"
+          />
+          <h2>Gerencie seus Gastos</h2>
+          <p>
+            Monitore todas as suas despesas de forma clara e organizada.
+            Descubra onde o seu dinheiro está indo e mantenha suas finanças
+            sempre sob controle.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--espaço para criar o rodapé do site-->
+    <footer class="footer-rodape">
+      <section>
+        <p>© 2025 Planeje suas Finanças. Todos os direitos reservados.</p>
+      </section>
+    </footer>
+
+    <!--espaço para add o script do site-->
+    <script src="script.js"></script>
+  </body>
+</html>
